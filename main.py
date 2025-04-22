@@ -50,7 +50,7 @@ async def send_sample_voice(message: Message):
     voice_path = "1718883178_sample4.ogg"
     if os.path.exists(voice_path):
         voice = FSInputFile(voice_path)
-       
+
         await message.answer_voice(voice)
     else:
         await message.answer("Аудиофайл не найден 😥")
